@@ -7,7 +7,6 @@ pipeline {
             steps {
                 //sh
                 sh "mvn clean package -DskipTests"
-                args '-v $HOME/.m2:/root/.m2'
             }
         }
         stage('Build Image') {
